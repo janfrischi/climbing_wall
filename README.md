@@ -16,6 +16,8 @@ Quick start
 3. Run validation to tare and read weights:
    - python3 validation.py
 
+Note: The [`demonstration.py`](demonstration.py) script is intended to run on the Raspberry Pi (ESP32 host in this workspace). It reads Phidget sensor data on the device, streams CSV-style force frames over a serial port, and the frontend consumes/visualizes that stream. See [`demonstration.main`](demonstration.py), [`demonstration.get_hand_foot_forces`](demonstration.py) and [`demonstration.get_total_weight_full_board`](demonstration.py) for the streaming/collection logic.
+
 Key scripts & functions
 - [`validation.tare_scale`](validation.py): collect zero-offsets.
 - [`validation.get_total_weight`](validation.py): continuous measurement loop computing total weight.
